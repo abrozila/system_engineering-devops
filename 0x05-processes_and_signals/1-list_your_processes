@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that displays all running processes in a user-oriented hierarchy
+
+ps -eo user,start,command --forest | sed '1s/START/STARTED/'
